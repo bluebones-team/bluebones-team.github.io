@@ -117,7 +117,7 @@ export function useLocalStorage<T>(key: string, defaultValue: T): Signal<T> {
 
 // store
 export const [store, setStore] = createStore<{ theme: string; locale: string }>(
-  { theme: 'nord', locale: 'zh' },
+  { theme: 'night', locale: 'zh' },
 );
 createEffect(() => {
   document.documentElement.lang = store.locale;
